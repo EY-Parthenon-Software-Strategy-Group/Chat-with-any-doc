@@ -28,10 +28,10 @@ def main():
     args = parse_arguments()
     
     embeddings = OpenAIEmbeddings(
-        deployment="SSG_embedding",
-        openai_api_base="https://caedaoipocaoa1l.openai.azure.com",
-        openai_api_version="2023-07-01-preview",
-        openai_api_key="d873529160934ec19f1276e20e6bd94a",
+        deployment="xx",
+        openai_api_base="xx",
+        openai_api_version="xxx",
+        openai_api_key="xx",
         openai_api_type="azure",
         chunk_size = 16,
         max_retries= 50)
@@ -42,18 +42,18 @@ def main():
     callbacks = [] if args.mute_stream else [StreamingStdOutCallbackHandler()]
     
     # Prepare the LLM
-    # BASE_URL = "https://usedaoipocaoa08.openai.azure.com"
-    # API_KEY = "5093bb833f7e481fad3c5743fb082a4d"
+    # BASE_URL = "xx"
+    # API_KEY = "xx"
     # DEPLOYMENT_NAME = "Davinci"
 
-    BASE_URL = "https://caedaoipocaoa1l.openai.azure.com"
-    API_KEY = "d873529160934ec19f1276e20e6bd94a"
-    DEPLOYMENT_NAME = "gpt-4"
+    BASE_URL = "xx"
+    API_KEY = "xx"
+    DEPLOYMENT_NAME = "xx"
     
     llm = AzureOpenAI(
         openai_api_base=BASE_URL,
-        # openai_api_version="2023-05-15",
-        openai_api_version="2023-07-01-preview",
+        # openai_api_version="xx",
+        openai_api_version="xx",
         deployment_name=DEPLOYMENT_NAME,
         openai_api_key=API_KEY,
         openai_api_type="azure",
