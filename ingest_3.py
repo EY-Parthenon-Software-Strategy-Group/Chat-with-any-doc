@@ -130,10 +130,10 @@ def main():
 
     # Create embeddings
     embeddings = AzureOpenAIEmbeddings(
-        deployment="SSG_embedding",
-        azure_endpoint="https://caedaoipocaoa1l.openai.azure.com",
-        openai_api_version="2023-07-01-preview",
-        openai_api_key="d873529160934ec19f1276e20e6bd94a",
+        deployment="xx",
+        azure_endpoint="xx",
+        openai_api_version="xx",
+        openai_api_key="xx",
         openai_api_type="azure",
         chunk_size = 2000,
         max_retries= 50)
